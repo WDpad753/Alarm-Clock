@@ -1,0 +1,100 @@
+/* 
+    Created on : 23 Oct 2022, 22:00:39
+    Author: Mohamed
+    Project: Clock Presenter project
+
+    Purpose:
+    Here are CSS codes that are used in HTML section to design the webpage.
+*/
+
+body
+{
+    /* The image used */
+     background-image: linear-gradient(blue, red);
+     object-fit: cover;
+
+    /* Full height */
+    height: auto;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+}
+
+.alarmmodal
+{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1;  /* Sit on top */
+    padding-top: 100px;   /* Location of the box */
+    padding-left: 45%;
+    left: 0;
+    top: 0;
+    width: 100%;  /* Full width */
+    height: 100%;  /* Full height */
+    overflow: auto;   /* Enable scroll if needed */
+    background-color: rgb(0,0,0);  /* Fallback color */
+    background-color: rgba(0,0,0,0.9);  /* Black w/ opacity */
+    margin: auto;
+}
+
+.container-3
+{
+    text-align: center;
+}
+
+.alarmmodalcontent{
+    width: 150px;
+    height: 320px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    animation-name: modalanim;
+    animation-duration: 1.5s;
+}
+
+.modalclose{
+    position: absolute;
+    top: 0;
+    transform: translateX(1300%);
+    align-items: start;
+    cursor: pointer;
+}
+
+.center
+{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.alarm
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-cover
+{
+    background-color: blue;
+    background-image: url("images/Custom Background(7).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1520px;
+}
+
+.activealarm
+{
+    text-align: center;
+    background-color: aquamarine;
+    display: none;
+}
+
+@Keyframes modalanim{
+    from{opacity: 0}
+    to {opacity:1}
+}

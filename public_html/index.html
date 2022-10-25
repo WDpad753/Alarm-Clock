@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 
+    Author: Mohamed
+    Project: Clock Presenter project
+
+    Purpose:
+    Here are HTML codes that are used to design the webpage.
+-->
+
+<html id="main">
+    <head>
+        <title>Clock Presenter Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Title of the project -->
+        <h1 class="center"> Clock Presenter project </h1>
+        <!-- Creating the background of the cover -->
+        <div class="background-cover"></div>
+            <!-- Creating container to present the current time and date -->
+            <div class="container">
+                <h1 class="center"> Here is the current time </h1>
+                <h1 id="timeclock" class="center">Current Time: </h1>
+            </div>
+            <div class="container-2">
+                <h1 class="center"> Here is the current date </h1>
+                <h1 id="timedate" class="center">Current Date: </h1>
+            </div>
+            <!-- Creating container to provide the ability to set alarm -->
+            <div class="container-3">
+                <h1 class="center"> Functions: </h1>
+                <h1 id="timedate" class="center"></h1>
+                <button id="alarmBtn" class="alarm">Set Alarm time</button>
+                <div class="alarmmodal" id="alarm-modal">
+                    <div class="alarmmodalcontent" id="alarm-modal-content">
+                    <div class="modalclose">X</div>
+                        <div class="alarmmodalheader">
+                            <h2>Setting up Alarm Clock:</h2>
+                            <p>Setup Your Alarm</p>
+                        <!-- Creating keywords in order to relate the input variables into the assigned keywords -->
+                        <div class="tab">
+                            <select id="select1">
+                              <option value="Hour" selected disabled hidden>Hour</option>
+                            </select>
+                            <select id="select2">
+                              <option value="Minute" selected disabled hidden>Minute</option>
+                            </select>
+                            <select id="select3">
+                              <option value="timeperiod" selected disabled hidden>Time Period</option>
+                              <option value="AM">AM</option>
+                              <option value="PM">PM</option>
+                            </select>
+                            <button id="SetAlarm" onclick="setalarm();">Set Alarm ></button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="active-alarm" class="activealarm">
+               <div id="alarm-text" class="center"></div>
+               <button id="ClearAlarm" onclick="clearalarm();">Clear Alarm ></button>
+            </div>
+    <!-- Executing any script codes found in JavaScript -->
+    <audio id="alarm-audio"></audio>
+    <script src="main.js"></script>
+    </body>
+</html>
