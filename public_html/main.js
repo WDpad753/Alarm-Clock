@@ -1,6 +1,6 @@
 /* 
     Author: Mohamed
-    Project: Clock Presenter project
+    Project: Alarm Clock project
 
     Purpose:
     Here are Javascript codes that are used in HTML section to design the webpage.
